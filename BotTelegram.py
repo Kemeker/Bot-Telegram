@@ -1,24 +1,26 @@
-#importa a biblioteca telebot
+'''------------------importa a biblioteca telebot------------------'''
 import telebot
 
 
-#variavel que chama a API
+'''---------------------Chamada da API---------------------'''
 CHAVE_API = "5642696200:AAFLDJr8PSSD0Zi2rEvzROCDeSyfrkbvedg"
 
-#Cria uma variavel chamada bot e atribui o token API
+'''------Recebe o Tolken API----'''
 bot = telebot.TeleBot(CHAVE_API)
 
 
-# Comando para para Opçao1
+'''---Comando para para Opçao1-------'''
 @bot.message_handler(commands=["Opcao1"]) 
 
-#Funçao que vai fazer com que o bot responda caso for escolhido a opçao1, ele apresenta esse link
+
+
 def opcao1(mensagem): 
+    '''Responde a opçao 1'''
     print(mensagem)
     bot.send_message(mensagem.chat.id, "Link das caixas https://docs.google.com/spreadsheets/d/1OluIwMpEBWe5lABNuk7lyzGE9S8kU_vzEVXYQOo8I7c/edit?usp=sharing")
 
 
-# comando para Opçao2
+'''-------Comando para opçao 2---------'''
 @bot.message_handler(commands=["Opcao2"])
 
 
