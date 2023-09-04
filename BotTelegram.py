@@ -17,7 +17,7 @@ bot = telebot.TeleBot(CHAVE_API)
 def opcao1(mensagem): 
     '''Responde a opçao 1'''
     print(mensagem)
-    bot.send_message(mensagem.chat.id, "Link das caixas https://docs.google.com/spreadsheets/d/1OluIwMpEBWe5lABNuk7lyzGE9S8kU_vzEVXYQOo8I7c/edit?usp=sharing")
+    bot.send_message(mensagem.chat.id, "Link das Caixas: https://docs.google.com/spreadsheets/d/1OluIwMpEBWe5lABNuk7lyzGE9S8kU_vzEVXYQOo8I7c/edit#gid=369058413 ")
 
 
 '''-------Comando para opçao 2---------'''
@@ -45,9 +45,9 @@ def verificar(mensagem):
 # com as seguintes opçoes ( Opcao1 e Opcao2)
 def responder(mensagem):
     texto = """
-    Escolha a opçao para continuar:
-    /Opcao1 abrir as caixas da rede
-    /Opcao2 sair"""
+    Esta triste? escolha a opçao para continuar:
+    /Opcao1 abrir a felicidade
+    /Opcao2 sair triste"""
     bot.reply_to(mensagem, texto)    
 
 
